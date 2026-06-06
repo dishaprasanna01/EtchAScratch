@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch A Scratch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="top-header">
+    <h1>Etch A Scratch</h1>
+    <p class="subtitle">Digital painting canvas — draw, erase, and experiment</p>
+  </div>
+
+  <div class="app">
+    <aside class="sidebar left">
+      <h2>Tools</h2>
+      <div class="tool-group">
+        <label for="colorPicker">Pick color</label>
+        <input type="color" id="colorPicker" value="#000000">
+      </div>
+      <div class="tool-group">
+        <button id="black" class="tool-btn">Black</button>
+        <button id="rainbow" class="tool-btn">Rainbow</button>
+        <button id="penEraser" class="tool-btn">Eraser</button>
+        <button id="clear" class="tool-btn">Clear</button>
+      </div>
+      <div class="tool-group">
+        <label for="gridSize">Grid size: <span id="gridSizeValue">16</span>x<span id="gridSizeValue2">16</span></label>
+        <input type="range" id="gridSize" min="8" max="64" value="16">
+      </div>
+    </aside>
+
+    <main class="canvas-area">
+      <header>
+        <h1 class="canvas-title">Canvas</h1>
+      </header>
+
+      <div class="canvas-frame">
+        <div id="container" class="canvas"></div>
+      </div>
+    </main>
+
+    <aside class="sidebar right">
+      <h2>Info</h2>
+      <p>Click and drag on the canvas to paint. Use the slider to change grid density.</p>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
