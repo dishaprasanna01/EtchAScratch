@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(70, 70, 70);
 }
 .snowburst-one-regular {
   font-family: "Snowburst One", system-ui;
@@ -13,7 +13,7 @@ body {
 
 
 h1{
-  color:#950101;
+  color:#d80202;
   font-size:24px;
   font-family:'Snowburst One', cursive;
 }
@@ -24,7 +24,7 @@ h1{
   width:500px;
   height:500px;
   border:1px solid black;
-
+  background-color: white;
 }
 
  .square {
